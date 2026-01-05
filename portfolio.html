@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="style/style.css">
+</head>
+<body>
+
+    <!-- Hlavní obsah -->
+    <main class="container">
+
+        <!-- Profilová sekce -->
+        <section class="profile">
+            <img src="obr/obr1.jpg" alt="Moje fotka" class="profile-img">
+            <h1>David Šticha</h1>
+            <p class="subtitle">Webový vývojář / Grafik / Řešetář / Programátor ...</p>
+            <p class="description">
+                Ahoj! Jsem nadšenec do Moderních technologií, nesnáším tvorbu moderních webů a řešení kreativních výzev. 
+                Ve volném čase pracuji v internetovém prostředí a zabývám se .
+            </p>
+        </section>
+
+        <!-- O mně + studium + dovednosti -->
+        <section class="about">
+            <h2>O mně</h2>
+            <p>
+                Zde napište delší text o sobě – vzdělání, zkušenosti, co vás baví, jaké technologie ovládáte atd.
+            </p>
+
+            <!-- Sekce o studiu – nyní s čistým CSS -->
+            <h3>Moje studium a vzdělání</h3>
+            <ul>
+                <li><strong>Dokončené Základní vzdělání</strong> – Základní škola Josefa Hlávky Přeštice</li>
+                <li><strong>2022–2026</strong> – Střední odborné učiliště elektrotechnické Plzeň</li>
+                <li><strong>Další kurzy a certifikace</strong> – ECDL certifikát; OS kurz Cisco, </li>
+            </ul>
+            <!-- Uprav dle svých skutečných údajů -->
+
+            <h3>Dovednosti</h3>
+            <div class="skills">
+                <span>HTML & CSS</span>
+                <span>JavaScript</span>
+                <span>Python</span>
+                <span>PHP</span>
+                <span>Audacity</span>
+                <span>Gimp</span>
+                <span>WordPress</span>
+                <!-- Přidejte další podle potřeby -->
+            </div>
+<br>
+<br>
+            <h3>Práce v programech</h3>
+            <div class="skills">
+                <span>Visual Studio Code</span>
+                <span>MAMP</span>
+                <span>DBeaver</span>
+                <span>Inkscape</span>
+                <span>Audacity</span>
+                <span>Gimp</span>
+                <span>WordPress</span>
+                <!-- Přidejte další podle potřeby -->
+            </div>
+        </section>
+
+        <!-- Galerie / Projekty -->
+        <section class="gallery">
+            <h2>Moje práce / Projekty</h2>
+
+            <!-- Velký odkaz na GitHub – nyní s třídou github-link -->
+            <div class="github-link">
+                <a href="https://github.com/tvuj-uzivatelske-jmeno" target="_blank">
+                    Prohlédněte si všechny moje projekty na GitHubu
+                </a>
+            </div>
+
+            <div class="gallery-grid">
+                <a href="obr/Obr2.jpg"><img src="obr/Obr2.jpg" alt="Projekt 1"></a>
+                <a href="obr/obr3.png"><img src="obr/obr3.png" alt="Projekt 2"></a>
+                <img src="https://via.placeholder.com/600x400" alt="Projekt 3">
+                <img src="https://via.placeholder.com/600x400" alt="Projekt 4">
+                <img src="https://via.placeholder.com/600x400" alt="Projekt 5">
+                <img src="https://via.placeholder.com/600x400" alt="Projekt 6">
+            </div>
+            <p class="gallery-note">Kliknutím na obrázek můžete přidat lightbox nebo odkaz na detail (později s JS).</p>
+        </section>
+
+    </main>
+
+    <!-- Footer s kontaktním formulářem -->
+    <footer class="footer">
+        <div class="container">
+            <h2>Kontaktujte mě</h2>
+            <p>Napište mi zprávu a ozvu se vám co nejdříve!</p>
+
+            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                <input type="text" name="name" placeholder="Vaše jméno" required>
+                <input type="email" name="_replyto" placeholder="Váš e-mail" required>
+                <textarea name="message" rows="5" placeholder="Vaše zpráva..." required></textarea>
+                <button type="submit">Odeslat zprávu</button>
+            </form>
+
+            <p class="footer-note">© 2026 Dada85. Všechna práva vyhrazena.</p>
+        </div>
+    </footer>
+
+</body>
+</html>
