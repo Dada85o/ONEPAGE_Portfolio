@@ -3,41 +3,72 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Portfolio</title>
+    <title>David Šticha - Portfolio</title>
     <link rel="stylesheet" href="style/style.css">
+    <script src="script/script.js" defer></script>
 </head>
+
 <body>
+    <header class="header" id="home">
+        <div class="container header-container">
+            <div class="logo">
+                <a href="#home">David Šticha</a>
+            </div>
+
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#aabout">O mně</a></li>
+                    <li><a href="#aspecialization">Specializace</a></li>
+                    <li><a href="#aprojects">Projekty</a></li>
+                    <li><a href="#contact-form">Kontakt</a></li>
+                </ul>
+
+                <!-- Hamburger pro mobil -->
+                <div class="hamburger">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+            </nav>
+        </div>
+    </header>
 
     <!-- Hlavní obsah -->
     <main class="container">
 
         <!-- Profilová sekce -->
         <section class="profile">
-            <img src="obr/obr1.jpg" alt="Moje fotka" class="profile-img">
+            <img src="obr/obr1.jpg" alt="Moje fotka" class="profile-img" loading="lazy">
             <h1>David Šticha</h1>
-            <p class="subtitle">Webový vývojář / Grafik / Řešetář / Programátor ...</p>
+            <p class="subtitle">Webový vývojář / Grafik / Řešetář / Práce s daty</p>
             <p class="description">
-                Ahoj! Jsem nadšenec do Moderních technologií, nesnáším tvorbu moderních webů a řešení kreativních výzev. 
-                Ve volném čase pracuji v internetovém prostředí a zabývám se .
+                Ahoj! Jsem nadšenec do moderních technologií, miluji tvorbu moderních webů a řešení kreativních výzev. 
+                Ve volném čase pracuji v internetovém prostředí a zabývám se datovou analýzou, grafikou a vývojem aplikací.
             </p>
         </section>
 
+        <body>
+
+            <!-- Hlavní obsah -->
+            <main class="container">
+        
         <!-- O mně + studium + dovednosti -->
-        <section class="about">
+        <section class="about" id="aabout">
             <h2>O mně</h2>
             <p>
-                Zde napište delší text o sobě – vzdělání, zkušenosti, co vás baví, jaké technologie ovládáte atd.
+                Jsem kreativní vývojář s vášní pro webové technologie a design. Mám zkušenosti s tvorbou responzivních webů, 
+                prací s daty a grafickými nástroji. Rád experimentuji s novými frameworky a hledám efektivní řešení pro složité problémy.
             </p>
-
-            <!-- Sekce o studiu – nyní s čistým CSS -->
+        
+            <br>
+            <br>
             <h3>Moje studium a vzdělání</h3>
             <ul>
                 <li><strong>Dokončené Základní vzdělání</strong> – Základní škola Josefa Hlávky Přeštice</li>
                 <li><strong>2022–2026</strong> – Střední odborné učiliště elektrotechnické Plzeň</li>
-                <li><strong>Další kurzy a certifikace</strong> – ECDL certifikát; OS kurz Cisco, </li>
+                <li><strong>Další kurzy a certifikace</strong> – ECDL certifikát; OS kurz Cisco; Další online kurzy na Coursera (Python, Web Development)</li>
             </ul>
-            <!-- Uprav dle svých skutečných údajů -->
-
+        
             <h3>Dovednosti</h3>
             <div class="skills">
                 <span>HTML & CSS</span>
@@ -47,10 +78,10 @@
                 <span>Audacity</span>
                 <span>Gimp</span>
                 <span>WordPress</span>
-                <!-- Přidejte další podle potřeby -->
+                <span>SQL & Databáze</span>
             </div>
-<br>
-<br>
+        <br>
+        <br>
             <h3>Práce v programech</h3>
             <div class="skills">
                 <span>Visual Studio Code</span>
@@ -60,50 +91,86 @@
                 <span>Audacity</span>
                 <span>Gimp</span>
                 <span>WordPress</span>
-                <!-- Přidejte další podle potřeby -->
+                <span>Word</span>
+                <span>Excel</span>
+                <span>Power Point</span>
             </div>
-        </section>
+        <br>
+        <br>
 
         <!-- Galerie / Projekty -->
-        <section class="gallery">
+        <section class="gallery" id="aprojects">
             <h2>Moje práce / Projekty</h2>
 
-            <!-- Velký odkaz na GitHub – nyní s třídou github-link -->
+            <!-- Velký odkaz na GitHub -->
             <div class="github-link">
-                <a href="https://github.com/tvuj-uzivatelske-jmeno" target="_blank">
-                    Prohlédněte si všechny moje projekty na GitHubu
+                <a href="https://github.com/Dada85o" target="_blank">
+                    Prohlédněte si všechny moje projekty na GitHubu ↗
                 </a>
             </div>
 
             <div class="gallery-grid">
-                <a href="obr/Obr2.jpg"><img src="obr/Obr2.jpg" alt="Projekt 1"></a>
-                <a href="obr/obr3.png"><img src="obr/obr3.png" alt="Projekt 2"></a>
-                <img src="https://via.placeholder.com/600x400" alt="Projekt 3">
-                <img src="https://via.placeholder.com/600x400" alt="Projekt 4">
-                <img src="https://via.placeholder.com/600x400" alt="Projekt 5">
-                <img src="https://via.placeholder.com/600x400" alt="Projekt 6">
+                <a href="obr/Obr2.jpg" class="lightbox-link"><img src="obr/Obr2.jpg" alt="Projekt 1" loading="lazy"></a>
+                <a href="obr/obr3.png" class="lightbox-link"><img src="obr/obr3.png" alt="Projekt 2" loading="lazy"></a>
+                <a href="obr/obr4.PNG" class="lightbox-link"><img src="obr/obr4.PNG" alt="Projekt 3" loading="lazy"></a>
+                <!-- Přidej další obrázky dle potřeby, odstranil jsem placeholders -->
             </div>
-            <p class="gallery-note">Kliknutím na obrázek můžete přidat lightbox nebo odkaz na detail (později s JS).</p>
+<br>
+<br>
+<br>
+<br>
+        
+            <!-- Nová sekce: Moje specializace s tabs -->
+            <h3 id="aspecialization">Moje specializace</h3>
+            <div class="tabs-container">
+                <div class="tabs-header">
+                    <button class="tab-button active" data-tab="networks">Počítačové sítě a základy síťařiny</button>
+                    <button class="tab-button" data-tab="software">Aplikovaný software</button>
+                </div>
+                <div class="tabs-content">
+                    <div id="networks" class="tab-panel active">
+                        <p>
+                            Specializuji se na počítačové sítě, včetně konfigurace routerů, switchů, bezpečnosti sítí (jako firewally a VPN), základů protokolů jako TCP/IP, UDP, HTTP/S a IPv6. Mám zkušenosti z Cisco kurzů, praktických projektů včetně nastavení VLAN, bezdrátových sítí (Wi-Fi standardy), diagnostiky problémů pomocí nástrojů jako Wireshark a integrace s cloudovými službami jako AWS nebo Azure. Rád řeším optimalizaci sítí pro vyšší výkon a bezpečnost.
+                        </p>
+                        <div class="progress-container">
+                            <label for="networks-progress">Moje úroveň znalostí:</label>
+                            <progress id="networks-progress" value="63" max="100">63%</progress>
+                            <span class="progress-value">63%</span>
+                        </div>
+                    </div>
+                    <div id="software" class="tab-panel">
+                        <p>
+                            V aplikovaném software exceluji v práci s Word (pokročilé formátování, šablony), Excel (vzorce, pivot tabulky, makra, analýza dat), prací s daty v nástrojích jako Power Query, webovými klienty (e-mail, cloud storage) a dalšími programy pro produktivitu. Mám ECDL certifikát, který potvrzuje moje znalosti v základních a pokročilých aplikacích kancelářského software, což mi pomáhá efektivně řešit úkoly spojené s daty a automatizací.
+                        </p>
+                        <div class="progress-container">
+                            <label for="software-progress">Moje úroveň znalostí:</label>
+                            <progress id="software-progress" value="85" max="100">85%</progress>
+                            <span class="progress-value">85%</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
+        
+            </main>
+        
+            <!-- Footer s kontaktním formulářem -->
+            <footer class="footer">
+                <div class="container">
+                    <h2>Kontaktujte mě</h2>
+                    <p>Napište mi zprávu a ozvu se vám co nejdříve!</p>
+        
+                    <form id="contact-form" action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
+                        <input type="text" name="name" placeholder="Vaše jméno" required>
+                        <input type="email" name="_replyto" placeholder="Váš e-mail" required>
+                        <textarea name="message" rows="5" placeholder="Vaše zpráva..." required></textarea>
+                        <button type="submit">Odeslat zprávu</button>
+                    </form>
+        
+                    <p class="footer-note">© 2026 David Šticha. Všechna práva vyhrazena.</p>
+                </div>
+            </footer>
+        
 
-    </main>
-
-    <!-- Footer s kontaktním formulářem -->
-    <footer class="footer">
-        <div class="container">
-            <h2>Kontaktujte mě</h2>
-            <p>Napište mi zprávu a ozvu se vám co nejdříve!</p>
-
-            <form action="https://formspree.io/f/your-form-id" method="POST" class="contact-form">
-                <input type="text" name="name" placeholder="Vaše jméno" required>
-                <input type="email" name="_replyto" placeholder="Váš e-mail" required>
-                <textarea name="message" rows="5" placeholder="Vaše zpráva..." required></textarea>
-                <button type="submit">Odeslat zprávu</button>
-            </form>
-
-            <p class="footer-note">© 2026 Dada85. Všechna práva vyhrazena.</p>
-        </div>
-    </footer>
-
-</body>
+        </body>
 </html>
